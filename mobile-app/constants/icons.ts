@@ -6,6 +6,7 @@ import meal from '../assets/icons/meal.png';
 import mealActive from '../assets/icons/mealActive.png';
 import profile from '../assets/icons/profile.png';
 import profileActive from '../assets/icons/profileActive.png';
+import backArrow from '../assets/icons/back-arrow.png'
 
 export const icons = {
     home,
@@ -15,5 +16,6 @@ export const icons = {
     meal,
     mealActive,
     profile,
-    profileActive
+    profileActive,
+    backArrow
 }

@@ -6,7 +6,7 @@ export default function QuickActionCard() {
         <View>
             <Text className="text-xl font-medium pt-4">Quick actions</Text>
 
-            <View className="flex-row items-center justify-between bg-white px-4 py-6 my-6 rounded-lg bg-[#4f8fe2] shadow">
+            <View className="flex-row items-center justify-between bg-white px-4 py-6 my-6 rounded-lg bg-[#4f8fe3] shadow">
                 <View className="flex-row gap-4 items-center">
                     <Image source={require('../../../assets/icons/play-btn.png')} className="bg-[#5f9eef] rounded-full p-2 w-12 h-12" />
                     <View className="text-white">

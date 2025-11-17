@@ -1,4 +1,4 @@
-import { icons } from '@/constants/icons';
+import { icons } from '@/constants';
 import { Redirect, Tabs } from 'expo-router';
 import React from 'react';
 import { ActivityIndicator, Image, Text, View } from 'react-native';
@@ -63,6 +63,14 @@ const _layout = () => {
                     options={{
                         tabBarIcon: ({ focused }) => (
                             <TabIcon focused={focused} icon={focused ? icons.homeActive : icons.home} title="Home" />
+                        ),
+                    }}
+                />
+                <Tabs.Screen
+                    name="exercise/index"
+                    options={{
+                        tabBarIcon: ({ focused }) => (
+                            <TabIcon focused={focused} icon={focused ? icons.workoutActive : icons.workout} title="Exercise" />
                         ),
                     }}
                 />
