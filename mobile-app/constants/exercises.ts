@@ -1,3 +1,13 @@
+export enum ExerciseCategory {
+    CHEST = "chest",
+    BACK = "back",
+    LEGS = "legs",
+    ARMS = "arms",
+    SHOULDERS = "shoulders",
+    CORE = "core",
+    CARDIO = "cardio",
+}
+
 export const exercises = [
     {
         id: 1,
@@ -5,6 +15,7 @@ export const exercises = [
         slug: "bench-press",
         desc: "A fundamental chest exercise that builds upper body strength.",
         image: require("../assets/images/bench-exercise-image.webp"),
+        filter: ExerciseCategory.CHEST,
     },
     {
         id: 2,
@@ -12,6 +23,7 @@ export const exercises = [
         slug: "squat",
         desc: "A powerful lower body exercise targeting legs and glutes.",
         image: require("../assets/images/squat-exercise.jpg"),
+        filter: ExerciseCategory.LEGS,
     },
     {
         id: 3,
@@ -19,6 +31,7 @@ export const exercises = [
         slug: "deadlift",
         desc: "A compound movement that engages the entire posterior chain.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.BACK,
     },
     {
         id: 4,
@@ -26,6 +39,7 @@ export const exercises = [
         slug: "overhead-press",
         desc: "Strengthens shoulders and arms while improving core stability.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.SHOULDERS,
     },
     {
         id: 5,
@@ -33,6 +47,7 @@ export const exercises = [
         slug: "pull-up",
         desc: "A bodyweight back exercise for building lats and grip strength.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.BACK,
     },
     {
         id: 6,
@@ -40,6 +55,7 @@ export const exercises = [
         slug: "barbell-row",
         desc: "Targets the back and improves overall pulling strength.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.BACK,
     },
     {
         id: 7,
@@ -47,6 +63,7 @@ export const exercises = [
         slug: "lunges",
         desc: "Improves balance and targets the quads and glutes.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.LEGS,
     },
     {
         id: 8,
@@ -54,6 +71,7 @@ export const exercises = [
         slug: "bicep-curl",
         desc: "Isolates the biceps for increased arm strength and size.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.ARMS,
     },
     {
         id: 9,
@@ -61,6 +79,7 @@ export const exercises = [
         slug: "tricep-dips",
         desc: "Targets the triceps and helps build upper arm definition.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.ARMS,
     },
     {
         id: 10,
@@ -68,5 +87,44 @@ export const exercises = [
         slug: "plank",
         desc: "A static core exercise improving endurance and stability.",
         image: require('../assets/images/deadlift-exercise.png'),
+        filter: ExerciseCategory.CORE,
+    },
+];
+
+export const exerciseFilters = [
+    {
+        id: 1,
+        title: "Chest",
+        label: ExerciseCategory.CHEST,
+    },
+    {
+        id: 2,
+        title: "Back",
+        label: ExerciseCategory.BACK,
+    },
+    {
+        id: 3,
+        title: "Legs",
+        label: ExerciseCategory.LEGS,
+    },
+    {
+        id: 4,
+        title: "Arms",
+        label: ExerciseCategory.ARMS,
+    },
+    {
+        id: 5,
+        title: "Shoulders",
+        label: ExerciseCategory.SHOULDERS,
+    },
+    {
+        id: 6,
+        title: "Core",
+        label: ExerciseCategory.CORE,
+    },
+    {
+        id: 7,
+        title: "Cardio",
+        label: ExerciseCategory.CARDIO,
     },
 ];
